@@ -1,5 +1,7 @@
 🏦 AutoML Cash Flow Optimization for Insurance Companies
+
 Predicting medical insurance costs using machine learning & Power BI
+
 📌 Overview
 
 Insurance companies operate on thin margins where accurate cash flow forecasting is critical. Small prediction errors at scale can translate into millions in unexpected payouts.
@@ -15,7 +17,6 @@ Identify high-risk, high-cost customer segments
 Support pricing, underwriting, and risk segmentation decisions
 
 <p align="center"> <img width="1084" alt="Dashboard Overview" src="https://github.com/user-attachments/assets/540f7d58-4033-47bc-8f44-9da6a80bddf6" /> </p>
-
 🎯 Business Objectives
 
 Improve cash flow forecasting accuracy
