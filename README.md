@@ -16,7 +16,8 @@ Identify high-risk, high-cost customer segments
 
 Support pricing, underwriting, and risk segmentation decisions
 
-<p align="center"> <img width="1084" alt="Dashboard Overview" src="https://github.com/user-attachments/assets/540f7d58-4033-47bc-8f44-9da6a80bddf6" /> </p>
+<img width="1081" height="608" alt="Screenshot 2026-01-20 170547" src="https://github.com/user-attachments/assets/42785bc9-a556-439f-8a6b-e29d7e46a021" />
+
 🎯 Business Objectives
 
 Improve cash flow forecasting accuracy
@@ -211,3 +212,4 @@ Data science / analytics portfolio project
 This project demonstrates how AutoML-style model selection, combined with Power BI storytelling, can transform raw healthcare data into actionable financial intelligence for insurance companies.
 
 It bridges the gap between machine learning outputs and business decision-making, making predictive analytics accessible to non-technical stakeholders.
+
