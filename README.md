@@ -1,43 +1,40 @@
 🏦 AutoML Cash Flow Optimization for Insurance Companies
-📌 Project Overview
+Predicting medical insurance costs using machine learning & Power BI
+📌 Overview
 
-Insurance companies rely heavily on accurate forecasting of medical expenses to manage cash flow, pricing, underwriting, and risk segmentation.
-This project builds an AutoML-powered medical cost prediction pipeline and visualizes the results in an interactive Power BI dashboard.
+Insurance companies operate on thin margins where accurate cash flow forecasting is critical. Small prediction errors at scale can translate into millions in unexpected payouts.
 
-Using patient demographics and health risk factors such as age, BMI, smoking status, gender, region, and dependents, the system predicts future medical insurance charges and highlights key cost drivers.
+This project builds an AutoML-style machine learning pipeline to predict medical insurance charges using patient demographics and health risk factors, and presents the results through an interactive Power BI dashboard designed for business decision-makers.
 
-<img width="1084" height="614" alt="Screenshot 2026-01-20 165605" src="https://github.com/user-attachments/assets/540f7d58-4033-47bc-8f44-9da6a80bddf6" />
+The solution enables insurers to:
 
+Forecast future liabilities more accurately
 
-The solution combines:
+Identify high-risk, high-cost customer segments
 
-Python (scikit-learn AutoML-style model comparison)
+Support pricing, underwriting, and risk segmentation decisions
 
-Feature engineering
+<p align="center"> <img width="1084" alt="Dashboard Overview" src="https://github.com/user-attachments/assets/540f7d58-4033-47bc-8f44-9da6a80bddf6" /> </p>
 
-Explainable predictions
-
-Power BI analytics & visualization
-
-🎯 Business Objective
+🎯 Business Objectives
 
 Improve cash flow forecasting accuracy
 
-Identify high-risk / high-cost customer segments
+Detect high-risk / high-cost policyholders
 
-Support data-driven pricing and underwriting decisions
+Enable data-driven pricing and underwriting
 
-Enable executive-level visibility through dashboards
+Provide executive-ready visual insights
 
-🧠 Machine Learning Approach
-🔹 Dataset
+🧠 Machine Learning Strategy
+📂 Dataset
 
 Medical Cost Personal Dataset
 
 Source: Kaggle
 https://www.kaggle.com/datasets/mirichoi0218/insurance
 
-🔹 Features Used
+🔍 Features Used
 
 Age
 
@@ -51,13 +48,17 @@ Smoking Status
 
 Region
 
-🔹 Engineered Features
+🧩 Feature Engineering
+
+To improve interpretability and model performance:
 
 Age Group: Young, Adult, Middle Aged, Senior
 
 BMI Category: Underweight, Normal, Overweight, Obese
 
-🔹 Models Evaluated (AutoML-style)
+🤖 AutoML-Style Model Comparison
+
+Multiple regression models are evaluated automatically using cross-validation:
 
 Linear Regression
 
@@ -67,11 +68,11 @@ Random Forest Regressor
 
 Gradient Boosting Regressor
 
-🔹 Model Selection Metric
+Model selection criterion:
 
-RMSE (Root Mean Squared Error) via cross-validation
+Root Mean Squared Error (RMSE)
 
-The model with the lowest RMSE is automatically selected and used for final predictions.
+The model with the lowest RMSE is selected and trained as the final predictor.
 
 ⚙️ Technology Stack
 Layer	Tools
@@ -79,45 +80,36 @@ Data Processing	Python, Pandas, NumPy
 Machine Learning	scikit-learn (pipelines, preprocessing, CV)
 Feature Engineering	pandas, sklearn transformers
 Visualization	Power BI Desktop
-Export Format	Excel (.xlsx)
+Output Format	Excel (.xlsx)
 Environment	Python 3.12, uv
-🗂️ Project Structure
-📁 AutoML-Cashflow-Insurance
-│
-├── main.py                         # End-to-end ML pipeline
-├── insurance.xlsx                  # Raw dataset
-├── insurance_predictions_powerbi.xlsx  # Model output for Power BI
-├── Cash Flow.pbix                  # Power BI dashboard file
-├── README.md                       # Project documentation
+🧪 Machine Learning Pipeline
 
-🧪 Machine Learning Pipeline (Python)
-
-Load and clean dataset
+Load and clean raw insurance data
 
 Engineer age and BMI categories
 
 Build preprocessing pipeline
 
-StandardScaler for numeric features
+StandardScaler for numeric variables
 
-OneHotEncoder for categorical features
+OneHotEncoder for categorical variables
 
 Compare multiple regression models using cross-validation
 
-Select best model automatically
+Automatically select best-performing model
 
-Train final model
+Train final model on full dataset
 
 Generate predictions and error metrics
 
 Export results for Power BI visualization
 
-📊 Power BI Dashboard Overview
-🔹 Dashboard Title
+📊 Power BI Dashboard
+🏷️ Dashboard Title
 
 AutoML Cash Flow & Medical Cost Forecast Dashboard
 
-🔹 KPIs
+📌 Key Performance Indicators
 
 Total Actual Charges
 
@@ -125,9 +117,9 @@ Total Predicted Charges
 
 Average Prediction Error
 
-Prediction Accuracy %
+Prediction Accuracy (%)
 
-🔹 Visuals
+📈 Visual Analytics
 
 Bar Charts
 
@@ -139,51 +131,51 @@ Bubble Chart
 
 BMI vs Predicted Charges
 
-Bubble size = cost
+Bubble size represents cost magnitude
 
-Color = smoker / non-smoker
+Color differentiates smoker vs non-smoker
 
 Validation Table
 
-Actual vs Predicted charges
+Actual vs Predicted Charges
 
 Conditional formatting to highlight outliers
 
-Slicers
+Interactive Slicers
 
 Region
 
 Gender
 
-Smoking status
+Smoking Status
 
-Age group
+Age Group
 
-BMI category
+BMI Category
 
-Numeric sliders for Age & BMI
+Numeric sliders for Age and BMI
 
-🎨 Dashboard Design Principles
+🎨 Design Principles
 
-Clear Actual vs Predicted color separation
+Clear visual separation of Actual vs Predicted values
 
-Red–green gradients to instantly highlight risk and errors
+Red–green gradients to instantly highlight risk and error
 
-Executive-friendly layout:
-Summary → Drivers → Interaction → Validation
+Executive-friendly flow:
+Summary → Cost Drivers → Risk Interaction → Model Validation
 
-📈 Key Insights Enabled
+📈 Key Insights
 
-Smokers and obese patients show significantly higher predicted costs
+Smokers consistently exhibit significantly higher predicted medical costs
 
-Age and BMI are strong cost drivers
+Obesity is a major cost driver across all age groups
 
-Model enables early detection of high-cash-outflow segments
+Age and BMI strongly influence insurance liabilities
 
-Improves transparency and explainability of predictions
+The model enables early identification of high cash-outflow segments
 
 🚀 How to Run the Project
-1️⃣ Run Python Model
+1️⃣ Run the Machine Learning Pipeline
 uv run main.py
 
 
@@ -211,8 +203,10 @@ Financial forecasting
 
 Healthcare risk analytics
 
-Data science portfolio project
+Data science / analytics portfolio project
 
 🏁 Conclusion
 
 This project demonstrates how AutoML-style model selection, combined with Power BI storytelling, can transform raw healthcare data into actionable financial intelligence for insurance companies.
+
+It bridges the gap between machine learning outputs and business decision-making, making predictive analytics accessible to non-technical stakeholders.
