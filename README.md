@@ -185,23 +185,31 @@ Power BI Dashboard
 ### 1️⃣ Run the ML Pipeline
 ```bash
 uv run main.py
+```
+## 🧾 Use Cases
+
+- **Insurance Underwriting**  
+  Risk-based evaluation of policyholders using predicted medical costs.
+
+- **Premium Pricing Optimization**  
+  Data-driven premium adjustments aligned with customer risk profiles.
+
+- **Financial Forecasting**  
+  Improved cash flow and liability forecasting at scale.
+
+- **Healthcare Risk Analytics**  
+  Identification of cost drivers across demographic and health dimensions.
+
+- **Data Science / Analytics Portfolio**  
+  End-to-end example of machine learning translated into business impact.
 
 ---
-use cases:
-  - insurance_underwriting
-  - premium_pricing_optimization
-  - financial_forecasting
-  - healthcare_risk_analytics
-  - data_science_and_analytics_portfolio
 
-conclusion:
-  summary: >
-    This project demonstrates how AutoML-style model selection, paired with
-    Power BI storytelling, can turn healthcare data into clear financial
-    intelligence.
-  impact: >
-    It bridges the gap between machine learning and business strategy—making
-    predictive analytics understandable, explainable, and actionable for
-    decision-makers.
-  closing_note: "The universe may be stochastic. Cash flow doesn’t have to be. 💸📊"
+## 🏁 Conclusion
+
+This project demonstrates how **AutoML-style model selection**, paired with **Power BI storytelling**, can turn healthcare data into **clear financial intelligence**.
+
+It bridges the gap between machine learning and business strategy—making predictive analytics **understandable**, **explainable**, and **actionable** for decision-makers.
+
+> *The universe may be stochastic. Cash flow doesn’t have to be.* 💸📊
 
