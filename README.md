@@ -25,13 +25,6 @@ This project builds an **AutoML-style machine learning pipeline** to predict med
 
 ---
 
-<p align="center">
-  <img width="1081" height="608" alt="Power BI Dashboard Preview"
-  src="https://github.com/user-attachments/assets/42785bc9-a556-439f-8a6b-e29d7e46a021" />
-</p>
-
----
-
 ## 🎯 Business Objectives
 
 ✔ Improve cash flow forecasting accuracy  
@@ -193,7 +186,8 @@ Power BI Dashboard
 ```bash
 uv run main.py
 
-use_cases:
+---
+use cases:
   - insurance_underwriting
   - premium_pricing_optimization
   - financial_forecasting
@@ -210,3 +204,4 @@ conclusion:
     predictive analytics understandable, explainable, and actionable for
     decision-makers.
   closing_note: "The universe may be stochastic. Cash flow doesn’t have to be. 💸📊"
+
