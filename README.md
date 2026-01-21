@@ -1,215 +1,212 @@
-🏦 AutoML Cash Flow Optimization for Insurance Companies
+<h1 align="center">🏦 AutoML Cash Flow Optimization for Insurance Companies</h1>
 
-Predicting medical insurance costs using machine learning & Power BI
+<p align="center">
+  <b>Predicting medical insurance costs using machine learning & Power BI</b><br>
+  <sub>From raw healthcare data → financial intelligence for decision-makers</sub>
+</p>
 
-📌 Overview
+<img width="1081" height="608" alt="Screenshot 2026-01-20 170547" src="https://github.com/user-attachments/assets/1e138343-ca48-42a2-9ae1-5e9f8475972f" />
 
-Insurance companies operate on thin margins where accurate cash flow forecasting is critical. Small prediction errors at scale can translate into millions in unexpected payouts.
+---
 
-This project builds an AutoML-style machine learning pipeline to predict medical insurance charges using patient demographics and health risk factors, and presents the results through an interactive Power BI dashboard designed for business decision-makers.
+## 📌 Overview
 
-The solution enables insurers to:
+> **Insurance is a cash-flow problem disguised as a healthcare problem.**
 
-Forecast future liabilities more accurately
+Insurance companies operate on thin margins where forecasting accuracy matters more than raw scale. Even small prediction errors—when multiplied across millions of policyholders—can translate into massive unexpected payouts.
 
-Identify high-risk, high-cost customer segments
+This project builds an **AutoML-style machine learning pipeline** to predict medical insurance charges using demographic and health risk factors, then translates those predictions into **executive-ready insights** via an interactive **Power BI dashboard**.
 
-Support pricing, underwriting, and risk segmentation decisions
+### 🔍 What this enables
+- 📈 More accurate forecasting of future liabilities  
+- 🚨 Early identification of high-risk, high-cost customers  
+- 💼 Data-driven pricing, underwriting, and risk segmentation  
+- 📊 Business-friendly ML outputs for non-technical stakeholders  
 
-<img width="1081" height="608" alt="Screenshot 2026-01-20 170547" src="https://github.com/user-attachments/assets/42785bc9-a556-439f-8a6b-e29d7e46a021" />
+---
 
-🎯 Business Objectives
+<p align="center">
+  <img width="1081" height="608" alt="Power BI Dashboard Preview"
+  src="https://github.com/user-attachments/assets/42785bc9-a556-439f-8a6b-e29d7e46a021" />
+</p>
 
-Improve cash flow forecasting accuracy
+---
 
-Detect high-risk / high-cost policyholders
+## 🎯 Business Objectives
 
-Enable data-driven pricing and underwriting
+✔ Improve cash flow forecasting accuracy  
+✔ Detect high-risk / high-cost policyholders  
+✔ Enable data-driven pricing and underwriting  
+✔ Deliver executive-ready visual insights  
 
-Provide executive-ready visual insights
+---
 
-🧠 Machine Learning Strategy
-📂 Dataset
+## 🧠 Machine Learning Strategy
 
-Medical Cost Personal Dataset
+### 📂 Dataset
+**Medical Cost Personal Dataset**  
+Source: Kaggle  
+🔗 https://www.kaggle.com/datasets/mirichoi0218/insurance
 
-Source: Kaggle
-https://www.kaggle.com/datasets/mirichoi0218/insurance
+---
 
-🔍 Features Used
+### 🔍 Features Used
+- **Age**
+- **Sex**
+- **BMI**
+- **Number of Children**
+- **Smoking Status**
+- **Region**
 
-Age
+---
 
-Sex
+### 🧩 Feature Engineering
 
-BMI
+To improve **interpretability** and **model performance**, raw variables are transformed into business-friendly categories:
 
-Number of Children
+- **Age Group** → Young | Adult | Middle-Aged | Senior  
+- **BMI Category** → Underweight | Normal | Overweight | Obese  
 
-Smoking Status
+These groupings allow stakeholders to reason about risk **without reading coefficients**.
 
-Region
+---
 
-🧩 Feature Engineering
+## 🤖 AutoML-Style Model Selection
 
-To improve interpretability and model performance:
+Rather than committing to a single model upfront, the pipeline evaluates multiple regression models automatically using cross-validation:
 
-Age Group: Young, Adult, Middle Aged, Senior
+- Linear Regression  
+- Ridge Regression  
+- Random Forest Regressor  
+- Gradient Boosting Regressor  
 
-BMI Category: Underweight, Normal, Overweight, Obese
+**Model selection criterion**  
+> 📉 **Root Mean Squared Error (RMSE)**
 
-🤖 AutoML-Style Model Comparison
+The model with the **lowest RMSE** is selected and trained as the final predictor.
 
-Multiple regression models are evaluated automatically using cross-validation:
+---
 
-Linear Regression
+## ⚙️ Technology Stack
 
-Ridge Regression
+| Layer | Tools |
+|------|------|
+| 🧹 Data Processing | Python, Pandas, NumPy |
+| 🤖 Machine Learning | scikit-learn (pipelines, preprocessing, CV) |
+| 🧠 Feature Engineering | pandas, sklearn transformers |
+| 📊 Visualization | Power BI Desktop |
+| 📦 Output | Excel (.xlsx) |
+| 🐍 Environment | Python 3.12, `uv` |
 
-Random Forest Regressor
+---
 
-Gradient Boosting Regressor
+## 🧪 Machine Learning Pipeline
 
-Model selection criterion:
+Raw Data
+↓
+Feature Engineering
+↓
+Preprocessing Pipeline
+↓
+Model Comparison (CV)
+↓
+Best Model Selection
+↓
+Final Training
+↓
+Predictions + Metrics
+↓
+Power BI Dashboard
 
-Root Mean Squared Error (RMSE)
 
-The model with the lowest RMSE is selected and trained as the final predictor.
+**Key components**
+- `StandardScaler` for numeric variables  
+- `OneHotEncoder` for categorical variables  
+- Cross-validation for fair model comparison  
 
-⚙️ Technology Stack
-Layer	Tools
-Data Processing	Python, Pandas, NumPy
-Machine Learning	scikit-learn (pipelines, preprocessing, CV)
-Feature Engineering	pandas, sklearn transformers
-Visualization	Power BI Desktop
-Output Format	Excel (.xlsx)
-Environment	Python 3.12, uv
-🧪 Machine Learning Pipeline
+---
 
-Load and clean raw insurance data
+## 📊 Power BI Dashboard
 
-Engineer age and BMI categories
+### 🏷 Dashboard Title
+**AutoML Cash Flow & Medical Cost Forecast Dashboard**
 
-Build preprocessing pipeline
+---
 
-StandardScaler for numeric variables
+### 📌 Executive KPIs
+- **Total Actual Charges**
+- **Total Predicted Charges**
+- **Average Prediction Error**
+- **Prediction Accuracy (%)**
 
-OneHotEncoder for categorical variables
+---
 
-Compare multiple regression models using cross-validation
+### 📈 Visual Analytics
 
-Automatically select best-performing model
+**Cost Drivers**
+- Predicted Charges by **Age Group**
+- Predicted Charges by **BMI Category**
 
-Train final model on full dataset
+**Risk Interaction**
+- **BMI vs Predicted Charges** (Bubble Chart)  
+  - Bubble size → cost magnitude  
+  - Color → smoker vs non-smoker  
 
-Generate predictions and error metrics
+**Model Validation**
+- Actual vs Predicted Charges  
+- Conditional formatting to highlight outliers  
 
-Export results for Power BI visualization
+---
 
-📊 Power BI Dashboard
-🏷️ Dashboard Title
+### 🎛 Interactive Controls
+- Region  
+- Gender  
+- Smoking Status  
+- Age Group  
+- BMI Category  
+- Numeric sliders for Age and BMI  
 
-AutoML Cash Flow & Medical Cost Forecast Dashboard
+---
 
-📌 Key Performance Indicators
+### 🎨 Design Principles
+- Clear separation of **Actual vs Predicted** values  
+- Red–green gradients for instant risk detection  
+- Executive storytelling flow:  
+  **Summary → Cost Drivers → Risk Interaction → Validation**
 
-Total Actual Charges
+---
 
-Total Predicted Charges
+## 📈 Key Insights
 
-Average Prediction Error
+> **The model doesn’t just predict costs — it explains where risk comes from.**
 
-Prediction Accuracy (%)
+- 🚬 Smokers show significantly higher predicted medical costs  
+- ⚖ Obesity is a dominant cost driver across all age groups  
+- ⏳ Age and BMI strongly influence long-term insurance liabilities  
+- 💸 High cash-outflow segments can be identified *before* losses occur  
 
-📈 Visual Analytics
+---
 
-Bar Charts
+## 🚀 How to Run the Project
 
-Predicted Charges by Age Group
-
-Predicted Charges by BMI Category
-
-Bubble Chart
-
-BMI vs Predicted Charges
-
-Bubble size represents cost magnitude
-
-Color differentiates smoker vs non-smoker
-
-Validation Table
-
-Actual vs Predicted Charges
-
-Conditional formatting to highlight outliers
-
-Interactive Slicers
-
-Region
-
-Gender
-
-Smoking Status
-
-Age Group
-
-BMI Category
-
-Numeric sliders for Age and BMI
-
-🎨 Design Principles
-
-Clear visual separation of Actual vs Predicted values
-
-Red–green gradients to instantly highlight risk and error
-
-Executive-friendly flow:
-Summary → Cost Drivers → Risk Interaction → Model Validation
-
-📈 Key Insights
-
-Smokers consistently exhibit significantly higher predicted medical costs
-
-Obesity is a major cost driver across all age groups
-
-Age and BMI strongly influence insurance liabilities
-
-The model enables early identification of high cash-outflow segments
-
-🚀 How to Run the Project
-1️⃣ Run the Machine Learning Pipeline
+### 1️⃣ Run the ML Pipeline
+```bash
 uv run main.py
 
+use_cases:
+  - insurance_underwriting
+  - premium_pricing_optimization
+  - financial_forecasting
+  - healthcare_risk_analytics
+  - data_science_and_analytics_portfolio
 
-This generates:
-
-insurance_predictions_powerbi.xlsx
-
-2️⃣ Open Power BI
-
-Load the generated Excel file
-
-Open Cash Flow.pbix
-
-Refresh data
-
-Explore interactive insights
-
-🧾 Use Cases
-
-Insurance underwriting
-
-Premium pricing optimization
-
-Financial forecasting
-
-Healthcare risk analytics
-
-Data science / analytics portfolio project
-
-🏁 Conclusion
-
-This project demonstrates how AutoML-style model selection, combined with Power BI storytelling, can transform raw healthcare data into actionable financial intelligence for insurance companies.
-
-It bridges the gap between machine learning outputs and business decision-making, making predictive analytics accessible to non-technical stakeholders.
-
+conclusion:
+  summary: >
+    This project demonstrates how AutoML-style model selection, paired with
+    Power BI storytelling, can turn healthcare data into clear financial
+    intelligence.
+  impact: >
+    It bridges the gap between machine learning and business strategy—making
+    predictive analytics understandable, explainable, and actionable for
+    decision-makers.
+  closing_note: "The universe may be stochastic. Cash flow doesn’t have to be. 💸📊"
