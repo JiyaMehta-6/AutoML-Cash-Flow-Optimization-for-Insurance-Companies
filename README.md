@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>Predicting medical insurance costs using machine learning & Power BI</b><br>
-  <sub>From raw healthcare data → financial intelligence for decision-makers</sub>
+  <sub>From raw healthcare data → financial intelligence for decision-makers</sub> 
 </p>
 
 <img width="1081" height="608" alt="Screenshot 2026-01-20 170547" src="https://github.com/user-attachments/assets/1e138343-ca48-42a2-9ae1-5e9f8475972f" />
@@ -212,4 +212,5 @@ This project demonstrates how **AutoML-style model selection**, paired with **Po
 It bridges the gap between machine learning and business strategy—making predictive analytics **understandable**, **explainable**, and **actionable** for decision-makers.
 
 > *The universe may be stochastic. Cash flow doesn’t have to be.* 💸📊
+
 
