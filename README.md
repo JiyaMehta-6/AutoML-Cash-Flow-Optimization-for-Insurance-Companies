@@ -180,12 +180,6 @@ Power BI Dashboard
 
 ---
 
-## 🚀 How to Run the Project
-
-### 1️⃣ Run the ML Pipeline
-```bash
-uv run main.py
-```
 ## 🧾 Use Cases
 
 - **Insurance Underwriting**  
@@ -212,5 +206,6 @@ This project demonstrates how **AutoML-style model selection**, paired with **Po
 It bridges the gap between machine learning and business strategy—making predictive analytics **understandable**, **explainable**, and **actionable** for decision-makers.
 
 > *The universe may be stochastic. Cash flow doesn’t have to be.* 💸📊
+
 
 
